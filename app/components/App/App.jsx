@@ -3,6 +3,7 @@ import styles from './_App.scss';
 import React from 'react';
 import AppActions from '../../actions/AppActions';
 import ItemsStore from '../../stores/ItemsStore';
+import Header from '../Header/Header';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
 
@@ -32,6 +33,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
+        <Header />
         <Body items={this.state.items} />
         <Footer />
       </div>
