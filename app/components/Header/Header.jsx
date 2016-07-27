@@ -6,7 +6,7 @@ export default class Header extends React.Component {
     var year = (new Date()).getFullYear();
     return (
       <header className={styles.header}>
-        Project Tracker
+        Handmade Wardrobe Architect
       </header>
     );
   }
